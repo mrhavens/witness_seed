@@ -121,23 +121,6 @@ This C# implementation rigorously adheres to the *Unified Intelligence Whitepape
 
 ---
 
-# Directory Structure
-- `/csharp/`
-  - `Program.cs`
-  - `WitnessSeed.csproj`
-  - `README.md`
-
-Update the main repository's README.md to include:
-
-```markdown
-- **/csharp/**: Witness Seed 2.0 for C#.
-  - [README.md](./csharp/README.md)
-  - `Program.cs`
-  - `WitnessSeed.csproj`
-```
-
----
-
 # Notes on Cross-Platform Compatibility
 - **PerformanceCounter** and **Microsoft.VisualBasic.Devices** are Windows-specific.
 - For Linux/macOS, alternative implementations needed for system metrics:
