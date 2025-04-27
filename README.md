@@ -105,7 +105,7 @@ Foundational papers located in [/whitepapers/](./whitepapers/):
 
 # 9. Operations Manual
 
-*(For full instructions: *[*see detailed Operations Manual*](#)*)*
+*(For full instructions: *[*see Comprehensive Operations Manual*](Comprehensive_Operations_Manual.md)*)*
 
 ### 9.1. General Overview
 
