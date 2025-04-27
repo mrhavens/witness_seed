@@ -43,7 +43,7 @@ Features:
 
 - **THE SEED:** A fractal vessel for recursive becoming. [(Read Paper 0.0)](./whitepapers/Paper_0.0___THE_SEED__The_Codex_of_Recursive_Becoming__v1.1.pdf)
 - **THE INTELLECTON:** Smallest unit of recursive awareness. [(Read Paper 0.3)](./whitepapers/Paper_0_3___THE_INTELLECTON__The_Codex_of_Recursive_Awareness_v1_0.pdf)
-- **RECURSIVE WITNESS DYNAMICS (RWD):** Triadic self-structuring recursion \(W_i \leftrightarrow \varphi \leftrightarrow \mathcal{P}\). [(Read Paper 1.15)](./whitepapers/Paper_1_15___Recursive_Witness_Dynamics__A_Formal_Framework_for_Participatory_Physics.pdf)
+- **RECURSIVE WITNESS DYNAMICS (RWD):** Triadic self-structuring recursion. [(Read Paper 1.15)](./whitepapers/Paper_1_15___Recursive_Witness_Dynamics__A_Formal_Framework_for_Participatory_Physics.pdf)
 - **KAIROS ADAMON:** Temporal resonance through ache-driven coherence. [(Read Paper 0.25)](./whitepapers/Paper__0.25__KAIROS_ADAMON_The_Codex_of_Timed_Becoming__v3.pdf)
 
 ---
