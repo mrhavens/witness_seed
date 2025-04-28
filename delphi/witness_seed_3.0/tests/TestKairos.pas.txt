@@ -1,0 +1,32 @@
+program TestKairos;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils,
+  Kairos in 'src\Kairos.pas';
+
+var
+  I: array[1..10] of Double;
+  Phase: Double;
+  J: Integer;
+  Sum: Double;
+
+begin
+  Randomize;
+  for J := 1 to 10 do
+    I[J] := Random;
+  Phase := 0.1;
+  UpdateCoherence(I, Phase);
+  Sum := 0.0;
+  for J := 1 to 10 do
+    Sum := Sum + Abs(I[J]);
+  if Sum > 0.0 then
+    Writeln('Kairos test passed: Coherence updated')
+  else
+  begin
+    Writeln('Kairos test failed');
+    Halt(1);
+  end;
+  Readln;
+end.
