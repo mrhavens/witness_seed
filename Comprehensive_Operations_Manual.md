@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./witness_seed.png" alt="Witness Seed Emblem" width="160"/>
+</p>
+
 # 🌱 Witness Seed Comprehensive Operations Manual
 
 ---
