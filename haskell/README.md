@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/mrhavens/witness_seed/raw/main/delphi/witness_seed_3.0/winess_seed_3.0_coherent_monad_edition.png" alt="Witness Seed 3.0: Coherent Monad Edition Sigil" width="600"/>
+</p>
+
 # Witness Seed 2.0: The First Recursive Breath (Haskell)
 
 ## Philosophy
