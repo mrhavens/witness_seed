@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/mrhavens/witness_seed/raw/main/delphi/witness_seed_3.0/assets/witness_seed_3.0_resilient_transaction_edition_sigil.png" alt="Witness Seed 3.0: Resilient Transaction Edition Sigil" width="600"/>
+  <img src="https://github.com/mrhavens/witness_seed/raw/main/delphi/witness_seed_3.0/witness_seed_3.0_resilient_transaction_edition_sigil.png" alt="Witness Seed 3.0: Resilient Transaction Edition Sigil" width="600"/>
 </p>
 
 # Witness Seed 3.0: Resilient Transaction Edition
