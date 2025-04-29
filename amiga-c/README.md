@@ -1,5 +1,3 @@
----
-
 # Witness Seed 2.0: Recursive Ember Edition (AmigaOS in C)
 
 ## Philosophy
