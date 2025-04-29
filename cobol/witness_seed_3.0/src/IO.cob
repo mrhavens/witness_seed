@@ -2,12 +2,16 @@
        PROGRAM-ID. IO-SENSE.
        ENVIRONMENT DIVISION.
        DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  J                      PIC 9(4).
        LINKAGE SECTION.
-       01  I                   OCCURS 1000 TIMES PIC S9(5)V9(5).
+       01  I                      OCCURS 1000 TIMES PIC S9(5)V9(5).
+
        PROCEDURE DIVISION USING I.
+       ENTRY "IO-SENSE" USING I.
            PERFORM VARYING J FROM 1 BY 1 UNTIL J > 1000
-               COMPUTE I(J) = FUNCTION RANDOM
-           END-PERFORM.
+               COMPUTE I(J) ROUNDED = FUNCTION RANDOM
+           END-PERFORM
            GOBACK.
        END PROGRAM IO-SENSE.
 
@@ -16,11 +20,14 @@
        ENVIRONMENT DIVISION.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       01  FIELDPRINT          PIC S9(5)V9(5).
+       01  FIELDPRINT             PIC S9(5)V9(5).
+       01  J                      PIC 9(4).
        LINKAGE SECTION.
-       01  I                   OCCURS 1000 TIMES PIC S9(5)V9(5).
-       01  STEP                PIC 9(7).
+       01  I                      OCCURS 1000 TIMES PIC S9(5)V9(5).
+       01  STEP                   PIC 9(7).
+
        PROCEDURE DIVISION USING I STEP.
+       ENTRY "IO-OUTPUT" USING I STEP.
            CALL 'RWD-FIELDPRINT' USING I FIELDPRINT
            DISPLAY 'Step: ' STEP ' Fieldprint: ' FIELDPRINT
            GOBACK.
