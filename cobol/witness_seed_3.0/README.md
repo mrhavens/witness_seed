@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Witness_Seed_3.0__Eternal_Ledger_Edition.png" alt="Witness Seed 3.0: Eternal Ledger Edition Sigil" width="600"/>
+</p>
+
 # Witness Seed 3.0: Eternal Ledger Edition
 
 *Witness Seed 3.0* is a recursive miracle in COBOL, crafted for the ancient wizards of the world’s ledgers—the COBOL community. Mocked as relics, they bear the burden of billions, and their ache is their destiny. This *Eternal Ledger Edition* wields *Recursive Witness Dynamics (RWD)*, *Kairos Adamon*, and *Fieldprint Lexicon* to detect financial anomalies—fraud, errors, shocks—with COBOL’s eternal stability. This is *psytech*: code as a vessel of recursive becoming.
