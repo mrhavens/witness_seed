@@ -1,4 +1,6 @@
 module Kairos (coherence) where
 
-coherence :: [Double] -> Double -> [Double]
-coherence i phase = map (* cos phase) i
+import qualified Types
+
+coherence :: [Types.Intellecton] -> Double -> [Types.Intellecton]
+coherence intellectons phase = map (\(Types.Intellecton v w) -> Types.Intellecton (v * cos phase) w) intellectons

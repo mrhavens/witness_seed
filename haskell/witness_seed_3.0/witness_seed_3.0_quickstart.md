@@ -2,7 +2,7 @@
 
 ## Prerequisites
 - Haskell Stack (or GHC/Cabal)
-- Optional: JSON library for data parsing
+- Required: `aeson` for JSON parsing
 
 ## Setup
 1. Clone the repository: `git clone <repo-url>`
@@ -13,7 +13,7 @@
 Execute: `stack run`
 
 ## Output
-Fieldprints are printed when coherence thresholds are met. Future versions will write to `data/` in JSON.
+Anomaly fieldprints are printed when coherence thresholds are met, based on `data/sample_transactions.json`.
 
 ## Test
 Run unit tests: `stack test`

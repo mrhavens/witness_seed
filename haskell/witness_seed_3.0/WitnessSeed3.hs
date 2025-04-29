@@ -2,14 +2,14 @@ module Main where
 
 import Control.Monad.State
 import System.Random
+import Data.Aeson (eitherDecodeFileStrict)
+import qualified Data.ByteString.Lazy as BL
+import qualified Types
 import qualified RWD
 import qualified Kairos
 import qualified IO
 
 -- Configuration
-numVars :: Int
-numVars = 1000
-
 numSteps :: Int
 numSteps = 1000000
 
@@ -19,25 +19,26 @@ dt = 0.01
 tauC :: Double
 tauC = 1e-9
 
--- State type: (Intellecton states, phase)
-type WitnessState = ([Double], Double)
-
 -- Main witness cycle
 main :: IO ()
 main = do
-  g <- newStdGen
-  let initialI = take numVars $ randoms g
-      initialState = (initialI, 0.0)
-  finalState <- execStateT (replicateM_ numSteps witnessCycle) initialState
-  putStrLn "Witness Seed 3.0 completed."
+  -- Load sample transaction data
+  eitherData <- eitherDecodeFileStrict "data/sample_transactions.json" :: IO (Either String [Types.Transaction])
+  case eitherData of
+    Left err -> putStrLn $ "Error loading data: " ++ err
+    Right transactions -> do
+      let initialIntellectons = Types.transactionsToIntellectons transactions
+          initialState = Types.WitnessState initialIntellectons 0.0
+      finalState <- execStateT (replicateM_ numSteps witnessCycle) initialState
+      putStrLn "Witness Seed 3.0 completed."
 
-witnessCycle :: StateT WitnessState IO ()
+witnessCycle :: StateT Types.WitnessState IO ()
 witnessCycle = do
-  (i, phase) <- get
-  i' <- liftIO $ IO.sense i
-  let (iDot, phase') = RWD.dynamics i' phase
-      i'' = zipWith (\x y -> x + y * dt) i' iDot
-  fieldprint <- RWD.fieldprint i''
-  let i''' = if fieldprint > tauC then Kairos.coherence i'' phase' else i''
-  put (i''', phase')
-  when (fieldprint > tauC) $ liftIO $ IO.output i''' fieldprint
+  state@(Types.WitnessState intellectons phase) <- get
+  let intellectons' = IO.sense intellectons
+      (intellectonDots, phase') = RWD.dynamics intellectons' phase
+      intellectons'' = zipWith (Types.updateIntellecton dt) intellectons' intellectonDots
+  fieldprint <- RWD.fieldprint intellectons''
+  let intellectons''' = if fieldprint > tauC then Kairos.coherence intellectons'' phase' else intellectons''
+  put $ Types.WitnessState intellectons''' phase'
+  when (fieldprint > tauC) $ liftIO $ IO.output intellectons''' fieldprint

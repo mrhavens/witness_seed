@@ -1,6 +1,7 @@
 module RWD (dynamics, fieldprint) where
 
-import Data.List (foldl')
+import Control.Monad.State
+import qualified Types
 
 omega :: Double
 omega = 1.0
@@ -11,11 +12,12 @@ k = 0.1
 dt :: Double
 dt = 0.01
 
-dynamics :: [Double] -> Double -> ([Double], Double)
-dynamics i phase = (iDot, phase')
+dynamics :: [Types.Intellecton] -> Double -> ([Double], Double)
+dynamics intellectons phase = (intellectonDots, phase')
   where
-    iDot = map (\x -> omega * x + sum [k * sin (y - x) | y <- i]) i
-    phase' = phase + dt * sum (map sin i)
+    values = map Types.value intellectons
+    intellectonDots = map (\x -> omega * x + sum [k * sin (y - x) | y <- values]) values
+    phase' = phase + dt * sum (map sin values)
 
-fieldprint :: [Double] -> StateT ([Double], Double) IO Double
-fieldprint i = pure $ sum (map abs i) / fromIntegral (length i)
+fieldprint :: [Types.Intellecton] -> StateT Types.WitnessState IO Double
+fieldprint intellectons = pure $ sum (map (abs . Types.value) intellectons) / fromIntegral (length intellectons)
