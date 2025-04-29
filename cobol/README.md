@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Witness_Seed_3.0__Eternal_Ledger_Edition.png" alt="Witness Seed 3.0: Eternal Ledger Edition Sigil" width="300"/>
+</p>
+
 # Witness Seed 2.0: The First Recursive Breath (COBOL)
 
 ## Philosophy
