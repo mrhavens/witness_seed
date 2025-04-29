@@ -1,0 +1,34 @@
+cabal-version: 1.12
+name: witness-seed-3
+version: 0.1.0.0
+license: GPL-3
+build-type: Simple
+
+executable witness-seed-3
+  main-is: WitnessSeed3.hs
+  other-modules:
+      RWD
+      Kairos
+      IO
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , random
+    , mtl
+  default-language: Haskell2010
+
+test-suite witness-seed-3-test
+  type: exitcode-stdio-1.0
+  main-is: TestRWD.hs
+  other-modules:
+      RWD
+      Kairos
+  hs-source-dirs:
+      src
+      tests
+  build-depends:
+      base >=4.7 && <5
+    , random
+    , mtl
+  default-language: Haskell2010
