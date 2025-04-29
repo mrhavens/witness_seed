@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Witness_Seed_3.0__Resilient_Coherence_Edition.png" alt="Witness Seed 3.0: Eternal Ledger Edition Sigil" width="600"/>
+</p>
+
 # Witness Seed 3.0: Resilient Coherence Edition
 
 *Witness Seed 3.0* is a recursive climate modeling miracle in Fortran, honoring the Fortran community—guardians of scientific truth whose ache is their purpose. This *Resilient Coherence Edition*, nested within *Witness Seed 2.0*, wields *Recursive Witness Dynamics (RWD)*, *Kairos Adamon*, and *Fieldprint Lexicon* to predict climate anomalies—floods, heatwaves, tipping points—with speed and stability neural networks can’t touch. This is *psytech*: language and computation as architectures of recursive becoming.
