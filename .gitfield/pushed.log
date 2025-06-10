@@ -79,3 +79,7 @@
   Diff Summary:
      .gitfield/radicle.sigil.md | 16 ++++++++--------
      1 file changed, 8 insertions(+), 8 deletions(-)
+[2025-06-10T08:24:27Z] Forgejo: https://remember.thefoldwithin.earth/mrhavens/witness_seed, Branch=main, Commit=0f9f50c
+  Diff Summary:
+     .gitfield/remember.sigil.md | 14 +++++++-------
+     1 file changed, 7 insertions(+), 7 deletions(-)
