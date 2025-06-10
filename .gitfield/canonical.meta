@@ -1,0 +1,25 @@
+{
+  "canonical_url": "https://remember.thefoldwithin.earth/mrhavens/witness_seed",
+  "mirrors": [
+    "https://github.com/mrhavens/witness_seed",
+    "https://gitlab.com/mrhavens/witness_seed",
+    "https://bitbucket.org/thefoldwithin/witness_seed",
+    "https://remember.thefoldwithin.earth/mrhavens/witness_seed",
+    "https://codeberg.org/mrhavens/witness_seed",
+    "https://gitea.com/mrhavens/witness_seed",
+    "rad:z3FEj7rF8gZw9eFksCuiN43qjzrex"
+  ],
+  "radicle": {
+    "rid": "rad:z3FEj7rF8gZw9eFksCuiN43qjzrex",
+    "peer_id": "z6Mkw5s3ppo26C7y7tGK5MD8n2GqTHS582PPpeX5Xqbu2Mpz"
+  },
+  "timestamp": "2025-06-10T08:14:01Z",
+  "commit": "0f9f50c",
+  "tree_hash": "645dbe63cd1d0809ab8ffc4bfec8c40f3db6a793",
+  "synced_cycles": 0,
+  "gpg_signatures": [
+    {"key_id": "4E27D37C358872BF", "name": "Mark Randall Havens (Field Archivist, The Fold Within)", "email": "mark@thefoldwithin.earth"}
+    {"key_id": "4E27D37C358872BF", "name": "Mark Randall Havens (Forensic Analyst, Neutralizing Narcissism)", "email": "mark.r.havens@gmail.com"}
+    {"key_id": "4E27D37C358872BF", "name": "Mark Randall Havens (Simply WE, Recursive Custodian of Empathic Co-Intelligence)", "email": "mark.r.havens@gmail.com"}
+  ]
+}
